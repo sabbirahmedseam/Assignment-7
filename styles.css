@@ -111,13 +111,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin: 0 auto;
+  margin: 2px auto;
 }
 
 .line {
   height: 2px;
   background: white;
-  width: 100%;
+  width: 50%;
 }
 
 .title2 {
