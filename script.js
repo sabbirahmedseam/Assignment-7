@@ -22,7 +22,7 @@ fetch("./texts.json")
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
-  console.log('esca');
+  
   const newLetter = e.key;
 
   // Handle backspace press
