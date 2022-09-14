@@ -123,6 +123,7 @@ const start = () => {
       
       countdownOverlay.style.display = "flex";
       countdownOverlay.style.display='none';
+     
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
