@@ -105,9 +105,9 @@ const closeModal = () => {
 const start = () => {
  
   // If already started, do not start again
-  // if (startTime) {
-  //   return;
-  // }
+  if (startTime) {
+    return;
+  }
 
   let count = 3;
   countdownOverlay.style.display = "flex";
@@ -124,7 +124,7 @@ const start = () => {
       countdownOverlay.style.display = "flex";
       countdownOverlay.style.display='none';
       display.classList.remove("inactive");
-console.log('ccc');
+
       clearInterval(startCountdown);
       startTime = new Date().getTime();
     }
