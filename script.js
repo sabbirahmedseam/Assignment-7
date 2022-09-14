@@ -99,10 +99,11 @@ const closeModal = () => {
   resultModal.classList.toggle("hidden");
 };
 
-const start = () => {
+const start = (startTime) => {
+ 
   // If already started, do not start again
   if (startTime) return;
-
+console.log('sabbir');
   let count = 3;
   countdownOverlay.style.display = "flex";
 
