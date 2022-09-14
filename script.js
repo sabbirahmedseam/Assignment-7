@@ -21,6 +21,7 @@ fetch("./texts.json")
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
+  console.log('esca');
   const newLetter = e.key;
 
   // Handle backspace press
@@ -102,7 +103,9 @@ const closeModal = () => {
 const start = () => {
  
   // If already started, do not start again
-  // if (startTime) return;
+  // if (startTime) {
+  //   return;
+  // }
 
   let count = 3;
   countdownOverlay.style.display = "flex";
@@ -112,11 +115,14 @@ const start = () => {
 
     // finished timer
     if (count == 0) {
+    
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
+      
       countdownOverlay.style.display = "flex";
+      countdownOverlay.style.display='none';
       display.classList.remove("inactive");
-
+console.log('ccc');
       clearInterval(startCountdown);
       startTime = new Date().getTime();
     }
