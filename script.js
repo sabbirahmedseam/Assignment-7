@@ -27,6 +27,8 @@ const typeController = (e) => {
 
   // Handle backspace press
   if (newLetter == "Backspace") {
+    errorCount++;
+   
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
   }
@@ -70,7 +72,9 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   
-  const timeTaken = (finishTime - startTime)/1000;
+  const timeTaken = (finishTime - startTime)/1000 ;
+  
+ 
 
   // show result modal
   resultModal.innerHTML = "";
