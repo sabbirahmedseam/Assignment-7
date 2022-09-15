@@ -26,9 +26,9 @@ body {
   border-radius: 15px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
+92.49deg,
+rgba(255, 255, 255, 0.1) 0.18%,
+rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
@@ -94,7 +94,7 @@ body {
   font-weight: 700;
 }
 .inactive {
-  border: 2px solid white !important;
+  border: 2px solid white   ;
 }
 .hidden {
   display: none;
@@ -112,10 +112,11 @@ body {
   align-items: center;
   gap: 15px;
   margin:0 auto;
+  
 }
 
 .line {
-  height: 2px;
+  height: 2px   ;
   background: white;
   width: 100%;
 }
@@ -162,9 +163,9 @@ button {
   border-radius: 15px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
+92.49deg,
+rgba(255, 255, 255, 0.1) 0.18%,
+rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
@@ -173,9 +174,9 @@ button {
 #modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
+92.49deg,
+rgba(255, 255, 255, 0.1) 0.18%,
+rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
   height: 100vh;
@@ -186,11 +187,11 @@ button {
 
 @media only screen and (max-width: 700px) {
   .box-container {
-    padding: 0 20px;
-    width: 100%;
+padding: 0 20px;
+width: 100%;
   }
   .card {
-    flex-direction: column;
+flex-direction: column;
    
   }
 }
@@ -198,18 +199,18 @@ button {
 
 @media only screen and (min-width: 700px) {
   .box-container {
-    padding: 0 20px;
-    width: 100%;
+padding: 0 20px;
+width: 100%;
   }
 
   .card {
   
-    flex-direction: column;
+flex-direction: column;
   }
   #histories{
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-gap:20px;
+display: grid;
+grid-template-columns:repeat(3,1fr) ;
+grid-gap:20px;
   }
 }
 
